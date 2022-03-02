@@ -37,16 +37,16 @@ _default_js = [
 _default_css = [
     ('leaflet_css',
      'https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css'),
-    ('bootstrap_css',
-     'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'),
-    ('bootstrap_theme_css',
-     'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'),  # noqa
-    ('awesome_markers_font_css',
-     'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'),  # noqa
-    ('awesome_markers_css',
-     'https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css'),  # noqa
-    ('awesome_rotate_css',
-     'https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css'),  # noqa
+    # ('bootstrap_css',
+    #  'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'),
+    # ('bootstrap_theme_css',
+    #  'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'),  # noqa
+    # ('awesome_markers_font_css',
+    #  'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'),  # noqa
+    # ('awesome_markers_css',
+    #  'https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css'),  # noqa
+    # ('awesome_rotate_css',
+    #  'https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css'),  # noqa
     ]
 
 
@@ -344,14 +344,14 @@ class Map(JSCSSMixin, MacroElement):
         # Set global switches
         figure.header.add_child(self.global_switches, name='global_switches')
 
-        figure.header.add_child(Element(
-            '<style>html, body {'
-            'width: 100%;'
-            'height: 100%;'
-            'margin: 0;'
-            'padding: 0;'
-            '}'
-            '</style>'), name='css_style')
+        # figure.header.add_child(Element(
+        #     '<style>html, body {'
+        #     'width: 100%;'
+        #     'height: 100%;'
+        #     'margin: 0;'
+        #     'padding: 0;'
+        #     '}'
+        #     '</style>'), name='css_style')
 
         figure.header.add_child(Element(
             '<style>#map {'
